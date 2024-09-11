@@ -1,0 +1,3 @@
+Run this command to powershell
+
+Start-Process -FilePath "C:\xampp\htdocs\eeeeeee\queue-worker.bat" -NoNewWindow

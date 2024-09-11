@@ -37,7 +37,7 @@ class NewslatterController extends Controller
             ];
             
             
-            SendEmailJob::dispatch($details);
+            SendEmailJob::dispatch($details)->delay(now()->addMinutes(5));
 
         return redirect()->route('newsletter.create')->with('success', 'Newsletter saved successfully.');
     }

@@ -19,7 +19,7 @@ class SendEmail extends Mailable
 
     public function build()
     {
-        return $this->view('emails.send_email')
+        return $this->view('emails.send-email')
                     ->with([
                         'subject' => $this->details['subject'],
                         'body' => $this->details['body'],
